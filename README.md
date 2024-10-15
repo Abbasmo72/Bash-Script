@@ -1,4 +1,4 @@
-# Bash-Script
+# Bash Script
 
 Bash scripting is a powerful tool for automating tasks in Unix-based operating systems such as Linux and macOS. A Bash script is essentially a sequence of commands written in the Bash shell, saved in a file with a .sh extension, that can be executed to perform various tasks. These scripts help automate repetitive tasks, manage system operations, and simplify complex processes like file manipulation, system monitoring, and software installation.
 
@@ -8,7 +8,7 @@ Since Bash is typically pre-installed on most Unix-based systems, it's widely ac
 
 A collection of simple Bash scripts.
 
-## Getting Started
+## Bash Scripts
 
 1. [linux_details.sh](linux_details.sh): This Bash script displays the number of online users, their access groups, the Linux version, and the system's uptime. It uses commands like who, groups, lsb_release, and uptime to gather and present this information in a readable format.
 1. [check_internet.sh](check_internet.sh): This Bash script checks internet connectivity by pinging Google's server (google.com). If the ping is successful, it prints "You are connected to the internet"; otherwise, it prints "You are not connected to the internet."
