@@ -14,3 +14,9 @@ A collection of simple Bash scripts.
 1. [check_internet.sh](check_internet.sh): This Bash script checks internet connectivity by pinging Google's server (google.com). If the ping is successful, it prints "You are connected to the internet"; otherwise, it prints "You are not connected to the internet."
 1. [auto_ftp_upload.sh](auto_ftp_upload.sh):This script automates the process of uploading files from a local directory to a specified FTP server. It connects to the FTP server using the provided credentials, uploads all files from the local directory, and logs the process in a log file for tracking purposes.
 1. [cleanup_temp_cache.sh](cleanup_temp_cache.sh):This script removes temporary files from /tmp, clears the system cache, and deletes user-specific cache files in ~/.cache. It helps free up space and improve system performance by cleaning unnecessary files and caches.
+
+
+
+## License
+
+MIT
