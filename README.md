@@ -12,7 +12,10 @@ Bash scripting is a powerful tool for automating tasks in Unix-based operating s
 Bash scripting is versatile and supports conditional statements (if-else), loops (for, while), functions, and variables, allowing developers to build complex workflows. It's often used in system administration for tasks like backups, managing log files, and user account handling. Additionally, scripts can interact with other programs and commands, making them useful for tasks like network management, disk usage monitoring, or package installation.
 
 Since Bash is typically pre-installed on most Unix-based systems, it's widely accessible and used across various fields, from development and DevOps to cybersecurity. Writing Bash scripts requires knowledge of the command-line interface and the ability to combine commands logically. It’s an essential skill for anyone working in system administration or Linux environments.
+<details>
+<summary>More information</summary>
 
+</details>
 A collection of simple Bash scripts.
 
 ## Bash Scripts
