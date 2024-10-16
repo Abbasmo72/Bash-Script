@@ -206,8 +206,47 @@ This Bash script is a useful tool for gathering essential system and user inform
 <hr>
 
 2. [check_internet.sh](Script/check_internet.sh): This Bash script checks internet connectivity by pinging Google's server (google.com). If the ping is successful, it prints "You are connected to the internet"; otherwise, it prints "You are not connected to the internet."
+
 <details>
-<summary>More information</summary>
+<summary>Analysis of the Bash Script</summary>
+This Bash script is designed to check the internet connection by pinging a specific website (in this case, google.com). It uses the ping command to determine whether the computer is connected to the internet. Below is an explanation of how the script works and its potential use cases.
+
+## How the Script Works:
+1. Setting the Target:
+ ```bash
+TARGET="google.com"
+```
+The variable TARGET is assigned the value "google.com". This is the domain that the script will attempt to ping to check the internet connection.
+Purpose: This defines the website the script will use as a reference to determine internet connectivity. Google.com is chosen here because it is a reliable, well-known site that is rarely down.
+
+2. Pinging the Target:
+ ```bash
+ping -c 1 $TARGET &> /dev/null
+```
+The ping command sends a small packet of data to the specified target (google.com) to check if the system can reach it.
+The -c 1 option limits the ping to only one packet, meaning it will send just one ping request and wait for a response.
+The &> /dev/null part suppresses the output, sending both standard output and error messages to /dev/null, so the user doesn’t see the details of the ping operation.
+Purpose: This is the core of the script, where the actual connectivity test happens. If the system can successfully ping Google, it means the internet is working.
+
+3. Checking the Ping Status:
+ ```bash
+if [ $? -eq 0 ]; then
+```
+The $? variable holds the exit status of the last executed command (in this case, the ping command). If the command succeeds, $? will be 0, indicating success. If it fails (e.g., no internet connection), $? will be a non-zero value.
+The script checks whether the last command (ping) was successful by comparing $? to 0.
+Purpose: This checks if the ping was successful, meaning the target (Google) responded, and hence, the internet connection is active.
+
+4. Displaying the Result:
+ ```bash
+echo "You are connected to the internet."
+```
+If the ping was successful (i.e., the exit status is 0), the script prints the message: "You are connected to the internet."
+If the ping fails (i.e., the exit status is not 0), the script executes the else block:
+ ```bash
+echo "You are not connected to the internet."
+```
+Purpose: This provides user feedback on whether the system is connected to the internet or not.
+
 
 </details>
 <hr>
