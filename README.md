@@ -33,8 +33,43 @@ Bash scripting is a powerful way to automate tasks and manage system operations 
 5. Task Scheduling:
   With tools like cron, Bash scripts can be scheduled to run at specific times or intervals, making them ideal for automated tasks like system maintenance, backups, or periodic checks.
 
+### Dependencies:
+Before using a Bash script, there are a few dependencies to consider:
+
+1. Bash Shell:
+  Bash is the default shell in most Linux distributions and macOS, so it's typically available out-of-the-box. To check the Bash version on your system, use:
+  ```bash
+bash --version
+```
+2. System Utilities:
+  Many Bash scripts rely on Unix utilities like grep, awk, sed, ls, and df. These utilities are pre-installed on most systems, but some scripts might require installing additional tools.For example, if you're writing a script to send emails, you'll need to install mailutils:
+  ```bash
+sudo apt install mailutils  # For Ubuntu/Debian
+sudo yum install mailx      # For CentOS/RHEL
+```
+3. File Permissions:
+  For a Bash script to execute, it must have execute permissions. This can be set with the chmod command:
+ ```bash
+chmod +x script.sh
+```
+### How Bash Scripts Work:
+1. Script Structure:
+  A Bash script starts with the shebang line #!/bin/bash, which tells the system that the script should be executed with the Bash shell. Without the shebang, the script may not execute     correctly, especially if it's run in a different shell environment.
+2. Variables:
+  Variables are used to store data. In Bash, variables can store strings, numbers, or command output:
+ ```bash
+name="John"
+echo "Hello, $name"
+```
+  You can also capture command outputs into variables:
+ ```bash
+current_date=$(date)
+echo "Today's date is: $current_date"
+```  
 
 
+
+  
 </details>
 
 
