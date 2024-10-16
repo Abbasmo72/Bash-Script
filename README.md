@@ -12,6 +12,7 @@ Bash scripting is a powerful tool for automating tasks in Unix-based operating s
 Bash scripting is versatile and supports conditional statements (if-else), loops (for, while), functions, and variables, allowing developers to build complex workflows. It's often used in system administration for tasks like backups, managing log files, and user account handling. Additionally, scripts can interact with other programs and commands, making them useful for tasks like network management, disk usage monitoring, or package installation.
 
 Since Bash is typically pre-installed on most Unix-based systems, it's widely accessible and used across various fields, from development and DevOps to cybersecurity. Writing Bash scripts requires knowledge of the command-line interface and the ability to combine commands logically. It’s an essential skill for anyone working in system administration or Linux environments.
+
 <details>
   
 ## <summary>About bash script</summary>
@@ -136,7 +137,73 @@ Bash scripting is an indispensable tool for anyone working with Unix-based syste
 1. [linux_details.sh](Script/linux_details.sh): This Bash script displays the number of online users, their access groups, the Linux version, and the system's uptime. It uses commands like who, groups, lsb_release, and uptime to gather and present this information in a readable format.
 
 <details>
-<summary>More information</summary>
+<summary>Analysis of the Bash Script</summary>
+This script is designed to provide essential information about the system and logged-in users. It retrieves data on online users, user access levels, Linux version, and system uptime. Below is a detailed breakdown of its functionality and use cases.
+  
+## How the Script Works:
+
+1. Number of Online Users:
+  
+```bash
+echo "Number of online users:"
+who | wc -l
+```
+  The who command lists all currently logged-in users.
+  wc -l counts the number of lines produced by the who command, which corresponds to the number of logged-in users.
+  Purpose: This part shows how many users are currently logged into the system. This can be useful for administrators to monitor system access.
+  
+2. Access Types of Users:
+  ```bash
+echo -e "\nAccess types of users:"
+for user in $(who | awk '{print $1}'); do
+    echo "$user: $(groups $user | awk -F: '{print $2}')"
+done
+```
+  First, the who command retrieves the list of users currently logged in, and awk '{print $1}' extracts the usernames.
+  For each user, groups $user is executed to show which groups the user belongs to, revealing their access types. This command helps determine the privileges or roles of the user in the   system.
+  Purpose: Displays the access level (groups) for each logged-in user. It is useful for checking user permissions and access control.
+  
+3. Linux Version:
+```bash
+echo -e "\nLinux version:"
+lsb_release -a
+```
+  The lsb_release -a command shows detailed information about the Linux distribution, including the distribution name, version, and codename.
+  Purpose: Displays the version and release information of the Linux distribution. This is important for understanding the environment the system is running on, particularly when       diagnosing system issues or performing updates.
+
+4. System Uptime:
+```bash
+echo -e "\nSystem uptime:"
+uptime -p
+```
+The uptime -p command shows how long the system has been running in a user-friendly format (e.g., "up 3 days, 4 hours").
+Purpose: Displays how long the system has been running since the last reboot. It is important for system administrators to monitor system stability and decide if a reboot is necessary after long periods of uptime.
+
+## How It Works Together:
+
+The script is sequential and performs the following tasks:
+1. Retrieves the number of users logged in.
+2. Identifies which groups these users belong to, providing insight into their access rights.
+3. Displays the current version of the Linux distribution, useful for maintaining or troubleshooting.
+4. Displays the current version of the Linux distribution, useful for maintaining or troubleshooting.
+   
+Each section of the script is executed one after another, providing a concise summary of the system’s current status.
+
+## Use Cases:
+1. System Monitoring:
+   System administrators can use this script to quickly gather key system information and user activity. Knowing how many users are logged in, what their access rights are, and how long the system has been running can help in managing and securing the system.
+   
+2. Security Audits:
+   The access control section (groups of users) can help in security audits, where admins need to verify that the right users have the correct permissions.
+
+3. Troubleshooting:
+   When troubleshooting issues that may be related to system uptime or specific Linux versions, this script helps provide immediate context about the environment.
+
+4. User Management:
+   It helps administrators monitor logged-in users and ensure that only authorized users are accessing the system.
+
+## Conclusion:
+This Bash script is a useful tool for gathering essential system and user information. It automates the process of retrieving logged-in users, their access levels, the system's version, and uptime, making it a simple yet powerful script for system administrators. You can use it during routine checks, security audits, or whenever system information is required for troubleshooting or maintenance.
 
 </details>
 <hr>
