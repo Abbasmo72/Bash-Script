@@ -33,7 +33,10 @@ A collection of simple Bash scripts.
 
 </details>
 4. [cleanup_temp_cache.sh](Script/cleanup_temp_cache.sh):This script removes temporary files from /tmp, clears the system cache, and deletes user-specific cache files in ~/.cache. It helps free up space and improve system performance by cleaning unnecessary files and caches.
+<details>
+<summary>More information</summary>
 
+</details>
 
 
 ## License
