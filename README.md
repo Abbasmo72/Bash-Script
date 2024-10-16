@@ -247,6 +247,22 @@ echo "You are not connected to the internet."
 ```
 Purpose: This provides user feedback on whether the system is connected to the internet or not.
 
+## Use Cases:
+1. Checking Internet Connectivity:
+   This script is useful for quickly determining if a system has internet access. It can be used as part of a larger automation or monitoring system that needs to verify the network status before performing tasks like downloading files or accessing remote servers.
+
+2. Troubleshooting Network Issues:
+   If you're experiencing issues with accessing online resources, running this script can help confirm whether the problem is related to your internet connection. It can tell you if the system itself is unable to reach external sites.
+
+3. Server Monitoring:
+  This script can be integrated into monitoring systems to regularly check if servers are connected to the internet. It can help ensure that servers are reachable from the outside, allowing administrators to take action if a connection is lost
+
+4. Automation:
+   Before running tasks that require internet access (e.g., software updates, downloading files, connecting to APIs), this script can be used to verify connectivity and avoid running tasks when offline.
+
+## Conclusion:
+This Bash script is a simple yet effective way to check internet connectivity by pinging a reliable external website like google.com. By monitoring the exit status of the ping command, the script can determine whether the system is online or offline and provide feedback to the user. It can be useful in a variety of scenarios, from troubleshooting network issues to ensuring that servers or systems are properly connected to the internet.
+
 
 </details>
 <hr>
