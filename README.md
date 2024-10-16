@@ -14,8 +14,8 @@ Bash scripting is versatile and supports conditional statements (if-else), loops
 Since Bash is typically pre-installed on most Unix-based systems, it's widely accessible and used across various fields, from development and DevOps to cybersecurity. Writing Bash scripts requires knowledge of the command-line interface and the ability to combine commands logically. It’s an essential skill for anyone working in system administration or Linux environments.
 
 <details>
+<summary>About bash script</summary>
   
-## <summary>About bash script</summary>
 ### What is Bash Scripting?
 Bash scripting is a powerful way to automate tasks and manage system operations in Unix-based systems like Linux and macOS. A Bash script is essentially a sequence of shell commands that are saved in a file, typically with a .sh extension. When executed, the script runs all the commands in sequence, allowing users to automate repetitive tasks, create complex workflows, and manage system resources efficiently.
 ### Common Applications of Bash Scripts:
@@ -126,9 +126,6 @@ echo "Welcome, $user_name!" > welcome.txt
 ## Conclusion:
 Bash scripting is an indispensable tool for anyone working with Unix-based systems. Whether you're a system administrator managing resources, a developer automating tests, or a DevOps engineer maintaining pipelines, Bash scripting can significantly improve efficiency. With a combination of built-in commands, loops, and control flow, you can automate almost any task, saving time and minimizing errors. Understanding the basics of Bash and knowing how to leverage its power is essential for working in Linux environments.
 
-
-
-  
 </details>
 
 
