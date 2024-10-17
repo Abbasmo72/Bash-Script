@@ -446,23 +446,91 @@ This Bash script provides an easy way to clean temporary files, system caches, a
 </details>
 <hr>
 
-4. [disk_space_alert.sh](Script/disk_space_alert.sh): This Bash script monitors the disk usage of the root partition and sends an email alert if it exceeds 80%. If the usage is below the threshold, it simply logs the current usage without sending an alert.
+5. [disk_space_alert.sh](Script/disk_space_alert.sh): This Bash script monitors the disk usage of the root partition and sends an email alert if it exceeds 80%. If the usage is below the threshold, it simply logs the current usage without sending an alert.
 
 <details>
 <summary>Analysis of the Bash Script</summary>
   
+## Disk Space Monitoring and Email Alert
+This Bash script monitors the disk usage of the root partition (/) on a Linux system and sends an email alert if the disk usage exceeds a specified threshold. It’s a useful script for system administrators who need to ensure that critical servers or systems don’t run out of disk space. Below is a detailed explanation of how the script works and when it can be used.
+
+## How the Script Works:
+
+1. Set the Disk Usage Threshold:
+ ```bash
+THRESHOLD=80
+```
+The variable THRESHOLD is set to 80, meaning the script will trigger an alert if disk usage exceeds 80% of the total disk capacity.
+Purpose: Allows the user to define a threshold for disk space usage. In this case, if usage goes above 80%, an email alert is triggered.
+
+2. Email Settings:
+ ```bash
+TO_EMAIL="your_email@example.com"
+SUBJECT="Disk Space Alert"
+```
+TO_EMAIL: The recipient’s email address for the alert.
+SUBJECT: The subject line of the email.
+Purpose: Specifies who will receive the alert and what the subject of the email will be. The user can customize these values.
+
+3. Get the Disk Usage of Root Partition:
+ ```bash
+DISK_USAGE=$(df / | grep / | awk '{print $5}' | sed 's/%//g')
+```
+This line retrieves the current disk usage percentage for the root partition (/).
+df /: Displays the disk space usage for the root partition.
+grep /: Filters the line related to the root partition.
+awk '{print $5}': Extracts the fifth column, which contains the disk usage percentage (e.g., "80%").
+sed 's/%//g': Removes the percentage sign from the output, leaving just the numeric value (e.g., "80").
+Purpose: The command calculates the current disk usage on the root partition, which will be compared against the threshold.
+
+4. Check if Disk Usage Exceeds the Threshold:
+ ```bash
+if [ "$DISK_USAGE" -gt "$THRESHOLD" ]; then
+```
+This conditional statement checks if the disk usage percentage exceeds the threshold (80% in this case).
+Purpose: Determines whether the system needs to trigger an alert based on the current disk usage.
+
+5. Compose and Send the Email Alert:
+ ```bash
+BODY="Warning: Disk usage on root partition has reached ${DISK_USAGE}%. Please take action to free up space."
+
+echo "$BODY" | mail -s "$SUBJECT" "$TO_EMAIL"
+echo "Disk space warning email sent to $TO_EMAIL."
+```
+If the disk usage exceeds the threshold, the script creates a message body with a warning and includes the current disk usage percentage.
+The mail command is used to send the email:
+mail -s "$SUBJECT" "$TO_EMAIL": Sends an email with the specified subject and recipient using the email body created.
+Purpose: The email notifies the administrator or user that the disk usage has reached a critical level and action is needed to free up space.
+
+6. No Alert if Disk Usage is Under Control:
+ ```bash
+else
+    echo "Disk usage is under control: ${DISK_USAGE}%"
+fi
+```
+If the disk usage is below the threshold, the script simply outputs a message stating that disk usage is within acceptable limits.
+Purpose: Provides a simple status update when no action is needed.
+
+## Use Cases:
+
+1. Monitoring Critical Servers:
+  This script is ideal for monitoring disk usage on critical servers where running out of disk space could lead to system failures, application crashes, or data loss. By sending alerts    when disk space is low, administrators can take preventive actions before the system is impacted.
+
+2. Automated Disk Space Alerts:
+  The script can be scheduled using cron to run periodically (e.g., daily or hourly) to continuously monitor disk usage. This ensures that administrators are promptly informed when disk   space is running low, allowing them to respond quickly.
+
+3. Preventing System Downtime:
+  Low disk space can cause significant problems, especially on production servers. This script helps avoid downtime by alerting administrators before the situation becomes critical. For   example, web servers, databases, or application servers can all experience issues if disk space runs out.
+
+4. Resource Management in Virtual Environments:
+  In cloud or virtualized environments, disk space can be limited or allocated dynamically. This script helps manage resources more effectively by ensuring that disk usage stays within    safe limits.
+
+## Conclusion:
+This Bash script is a simple but effective tool for monitoring disk space usage on a Linux system. By sending email alerts when disk usage exceeds a defined threshold, the script helps administrators stay on top of resource management, prevent downtime, and ensure the smooth running of systems. It is particularly useful for environments where disk space is a critical resource, such as production servers or virtualized systems.
 
 
 </details>
 <hr>
-
-
-
-
-
-
-
-
 
 
 ## License
