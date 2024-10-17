@@ -446,7 +446,20 @@ This Bash script provides an easy way to clean temporary files, system caches, a
 </details>
 <hr>
 
-4. [disk_space_alert.sh](Script/disk_space_alert.sh)
+4. [disk_space_alert.sh](Script/disk_space_alert.sh): This Bash script monitors the disk usage of the root partition and sends an email alert if it exceeds 80%. If the usage is below the threshold, it simply logs the current usage without sending an alert.
+
+<details>
+<summary>Analysis of the Bash Script</summary>
+  
+
+
+</details>
+<hr>
+
+
+
+
+
 
 
 
