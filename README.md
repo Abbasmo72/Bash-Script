@@ -129,7 +129,7 @@ Bash scripting is an indispensable tool for anyone working with Unix-based syste
 </details>
 
 
-## Bash Scripts
+## Getting Started
 
 1. [linux_details.sh](Script/linux_details.sh): This Bash script displays the number of online users, their access groups, the Linux version, and the system's uptime. It uses commands like who, groups, lsb_release, and uptime to gather and present this information in a readable format.
 
