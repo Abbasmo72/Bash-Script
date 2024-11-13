@@ -4,6 +4,12 @@
 <img src="https://cloud.githubusercontent.com/assets/2059754/24601246/753a7f36-1858-11e7-9d6b-7a0e64fb27f7.png" height="250px" width="250px">
 
 </div>
+<hr>
+
+[Click to see the descriptions in Persian language](Persian.md)
+
+<b>Notice:</b> <b>Each section has a README file in English and Farsi in its respective file. By clicking on the links of each section, you can learn more in-depth information about the code and its function.
+<hr>
 
 Bash scripting is an essential and powerful tool in managing Linux and Unix-based systems, enabling system administrators, developers, and advanced users to streamline complex processes and increase productivity through automation. By using Bash scripts, we can store a series of commands in a file and execute them automatically or with a single command, making repetitive and tedious tasks much simpler.
 
