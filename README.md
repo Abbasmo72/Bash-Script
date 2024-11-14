@@ -24,10 +24,12 @@ Bash scripting is also beneficial in network and cybersecurity. Network administ
 Overall, Bash scripting simplifies complex and repetitive tasks, enhancing efficiency, accuracy, and flexibility in managing computer systems. With these benefits, Bash scripting has become an essential tool in system management and software development.
 
 <hr>
+
 ## 1. Auto Ftp Upload
 This Bash script is designed to upload files from a local directory to an FTP server. It first defines the necessary FTP server details, including the server address, username, password, and the target directory on the server where files will be uploaded. Next, it sets the path to the local directory containing files for upload and specifies a log file to store the upload status. The upload_files function is used to connect to the server and upload the files. This function connects to the server non-interactively using the ftp command, navigates to the specified directory on the server, and uploads all files from the local directory. Finally, the script logs the upload process to the specified log file.
 
-To view the file <b>[English README.md](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.md)</b> and <b>[Persian README.md](BashScript/AutoFtpUpload/AutoFtpUploadPersian.md</b> And the complete code <b>[Python Code](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.py)</b>.
+To view the file <b>[English README.md](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.md)</b> and <b>[Persian README.md](BashScript/AutoFtpUpload/AutoFtpUploadPersian.md</b> And the complete code <b>[Python Code](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.py)</b>..
+
 <hr>
 
 ## 2. 
