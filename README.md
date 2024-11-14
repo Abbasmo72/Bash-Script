@@ -28,11 +28,16 @@ Overall, Bash scripting simplifies complex and repetitive tasks, enhancing effic
 ## 1. Auto Ftp Upload
 This Bash script is designed to upload files from a local directory to an FTP server. It first defines the necessary FTP server details, including the server address, username, password, and the target directory on the server where files will be uploaded. Next, it sets the path to the local directory containing files for upload and specifies a log file to store the upload status. The upload_files function is used to connect to the server and upload the files. This function connects to the server non-interactively using the ftp command, navigates to the specified directory on the server, and uploads all files from the local directory. Finally, the script logs the upload process to the specified log file.
 
-To view the file <b>[English README.md](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.md)</b> and  <b>[Persian README.md](BashScript/AutoFtpUpload/AutoFtpUploadPersian.md)</b> And the complete code <b>[Python Code](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.sh)</b>..
+View the code <b>[Bash Script Code](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.sh)</b>.
 
 <hr>
 
-## 2. 
+## 2. Check Internet
+This bash script is designed to check the internet connection status. Initially, the website address to be used for testing the connection (in this case, "google.com") is stored in a variable called TARGET. Then, the ping command is used to send a ping request to the specified website, and its output is directed to /dev/null to only check the command's execution status. Next, by checking the return code ($?), the script determines whether the ping was successful or not. If the return code is zero (indicating success), the message "You are connected to the internet" is printed; otherwise, the message "You are not connected to the internet" will be displayed. This simple script can be used to check the internet connection status on Unix-based systems. This bash script is designed to check the internet connection status. Initially, the website address to be used for testing the connection (in this case, "google.com") is stored in a variable called TARGET. Then, the ping command is used to send a ping request to the specified website, and its output is directed to /dev/null to only check the command's execution status. Next, by checking the return code ($?), the script determines whether the ping was successful or not. If the return code is zero (indicating success), the message "You are connected to the internet" is printed; otherwise, the message "You are not connected to the internet" will be displayed. This simple script can be used to check the internet connection status on Unix-based systems.
+
+View the code <b>[Bash Script Code](BashScript/CheckInternet/CheckInternetEnglish)</b>.
+
+<hr>
 
 ## License
 
