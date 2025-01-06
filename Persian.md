@@ -63,6 +63,7 @@
 مشاهده کد <b>[Bash Script Code](BashScript/ViewSyslog/ViewSyslogPersian.sh)</b>.
 
 <hr>
+
 ## مجوز
 
 MIT
