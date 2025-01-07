@@ -54,6 +54,10 @@ This bash script provides various system-related information. It first outputs t
 View the code <b>[Bash Script Code](BashScript/LinuxDetails/LinuxDetailsEnglish.sh)</b>.
 <hr>
 
+## 6. View Sys log
+
+
+<hr>
 ## License
 
 MIT
