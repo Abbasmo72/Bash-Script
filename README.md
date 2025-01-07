@@ -59,6 +59,7 @@ This Bash script is designed to check user privileges and display the recent lin
 
 View the code <b>[Bash Script Code](BashScript/ViewSyslog/ViewSyslogEnglish.sh)</b>.
 <hr>
+
 ## License
 
 MIT
