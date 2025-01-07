@@ -55,6 +55,7 @@ View the code <b>[Bash Script Code](BashScript/LinuxDetails/LinuxDetailsEnglish.
 <hr>
 
 ## 6. View Sys log
+This Bash script is designed to check user privileges and display the recent lines of a system log file. It first verifies whether the user has root access; if not, an error message is displayed, and the execution stops. The log file path is stored in the LOG_FILE variable, with the default set to /var/log/syslog. It then checks for the existence of the log file, and if the file is not found, an appropriate message is shown, and the script exits. If the file exists, the script uses the tail command to display the last 30 lines of the log. This simple and quick tool is intended for system administrators to monitor and troubleshoot recent system events efficiently.
 
 
 <hr>
