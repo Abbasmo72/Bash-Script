@@ -38,7 +38,7 @@ View the code <b>[Bash Script Code](BashScript/DiskSpaceAlert/DiskSpaceAlertEngl
 <hr>
 
 ## 5. Linux Details
-This bash script provides various system-related information. It first outputs the number of online users by using the who command to list logged-in users and wc -l to count them. Next, it displays the access types (user groups) for each logged-in user. The who command lists users, and for each user, the groups command is used to fetch the groups they belong to. The script then displays the Linux version by running lsb_release -a, which provides detailed information about the distribution. Finally, the script shows the system's uptime using the uptime -p command, which prints how long the system has been running. This script is useful for quickly checking system status and user details.
+This bash script provides system-related information: the number of online users (using who and wc -l), the user groups for each logged-in user (with who and groups), the Linux version (using lsb_release -a), and the system's uptime (using uptime -p). It’s useful for quickly checking system status and user details.
 
 View the code <b>[Bash Script Code](BashScript/LinuxDetails/LinuxDetailsEnglish.sh)</b>.
 <hr>
