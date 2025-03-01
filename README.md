@@ -26,7 +26,7 @@ View the code <b>[Bash Script Code](BashScript/CheckInternet/CheckInternetEnglis
 <hr>
 
 ## 3. Cleanup Temp Cache
-This bash script is designed to clean various types of files and caches on a system. It defines three functions: clean_temp_files removes all files in the /tmp directory, typically used for temporary storage; clean_system_cache clears the system's memory cache by instructing the kernel to drop cached data, dentries, and inodes; and clean_user_cache deletes files from the user's cache directory (usually located at ~/.cache), including browser cache and application-specific files. After defining these functions, the script runs them in sequence, printing messages before and after each cleaning process. Finally, it outputs "Cleanup complete" to indicate the script has finished.
+This bash script cleans various system caches and files. It defines three functions: clean_temp_files removes files in the /tmp directory, clean_system_cache clears the system's memory cache, and clean_user_cache deletes files from the user's ~/.cache directory. The script runs these functions in sequence, printing messages before and after each process, and ends with "Cleanup complete."
 
 View the code <b>[Bash Script Code](BashScript/CleanupTempCache/cleanupTempCacheEnglish.sh)</b>.
 <hr>
