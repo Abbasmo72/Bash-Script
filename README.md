@@ -14,7 +14,7 @@ Bash scripting is a powerful tool for automating tasks in Linux and Unix-based s
 <hr>
 
 ## 1. Auto Ftp Upload
-This Bash script is designed to upload files from a local directory to an FTP server. It first defines the necessary FTP server details, including the server address, username, password, and the target directory on the server where files will be uploaded. Next, it sets the path to the local directory containing files for upload and specifies a log file to store the upload status. The upload_files function is used to connect to the server and upload the files. This function connects to the server non-interactively using the ftp command, navigates to the specified directory on the server, and uploads all files from the local directory. Finally, the script logs the upload process to the specified log file.
+This Bash script uploads files from a local directory to an FTP server. It defines FTP server details (address, username, password, and target directory), sets the local directory path, and specifies a log file. The upload_files function connects to the FTP server and uploads all files non-interactively using the ftp command, logging the process to the log file.
 
 View the code <b>[Bash Script Code](BashScript/AutoFtpUpload/AutoFtpUploadEnglish.sh)</b>.
 <hr>
