@@ -8,7 +8,6 @@
 
 [Click to see the descriptions in Persian language](Persian.md)
 
-<b>Notice:</b> <b>Each section has a README file in English and Farsi in its respective file. By clicking on the links of each section, you can learn more in-depth information about the code and its function.
 <hr>
 Bash scripting is a powerful tool for automating tasks in Linux and Unix-based systems, allowing system administrators and developers to streamline processes and improve productivity. It can automate system tasks like file management, backups, and monitoring resource usage, reducing repetitive work. Additionally, Bash is natively available, making it easy to learn and use, even for beginners. In software development, Bash scripts automate build, testing, and deployment processes, saving time and reducing errors. It's also useful in network and cybersecurity for monitoring, logging, and managing user permissions. Overall, Bash scripting increases efficiency, accuracy, and flexibility.
 <hr>
