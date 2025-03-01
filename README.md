@@ -32,7 +32,7 @@ View the code <b>[Bash Script Code](BashScript/CleanupTempCache/cleanupTempCache
 <hr>
 
 ## 4. Disk Space Alert
-This bash script monitors disk usage and sends an email alert if the disk usage exceeds a specified threshold. The threshold is set to 80% in this example. It first retrieves the disk usage percentage of the root partition (/) using the df command and processes the output with awk and sed to extract the percentage value. The script then compares the disk usage with the threshold. If the usage exceeds the threshold, it composes an email body with a warning message and sends it to a specified email address using the mail command. If the disk usage is under control, it prints a message indicating the current disk usage. The script helps automate disk space monitoring and alerts the user when intervention is needed.
+This bash script monitors disk usage and sends an email alert if the usage exceeds 80%. It checks the root partition’s usage using df, processes the output with awk and sed, and compares it to the threshold. If the usage is high, it sends an email warning; otherwise, it prints the current disk usage. This helps automate disk space monitoring and alerts the user when action is needed.
 
 View the code <b>[Bash Script Code](BashScript/DiskSpaceAlert/DiskSpaceAlertEnglish.sh)</b>.
 <hr>
