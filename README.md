@@ -60,6 +60,12 @@ This Bash script is designed to check user privileges and display the recent lin
 View the code <b>[Bash Script Code](BashScript/ViewSyslog/ViewSyslogEnglish.sh)</b>.
 <hr>
 
+## 7. whereIP
+This Bash script takes an IP address as input and retrieves its geographical information. It first checks if the jq tool is installed, then queries the ip-api.com API to fetch location data. If the request is successful, it prints the city, region, and country of the given IP address.
+
+View the code <b>[Bash Script Code](BashScript/whereIP/whereIPEnglish.sh)</b>.
+<hr>
+
 ## License
 
 MIT
