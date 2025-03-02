@@ -54,6 +54,12 @@ This Bash script takes an IP address as input and retrieves its geographical inf
 View the code <b>[Bash Script Code](BashScript/whereIP/whereIPEnglish.sh)</b>.
 <hr>
 
+## 8. Weather
+This script fetches weather information from wttr.in. If the -l option is provided with a location, it displays the weather for that location; otherwise, it shows the default weather. The -h option displays the script usage guide.
+
+View the code <b>[Bash Script Code](BashScript/Weather/WeatherEnglish.sh)</b>.
+<hr>
+
 ## License
 
 MIT
