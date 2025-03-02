@@ -60,6 +60,12 @@ This script fetches weather information from wttr.in. If the -l option is provid
 View the code <b>[Bash Script Code](BashScript/Weather/WeatherEnglish.sh)</b>.
 <hr>
 
+## 9. InfoHub
+This script provides an interactive menu to display system information. The user can view details like system name, disk space, and home directory usage. The program continuously runs until the exit option is selected.
+
+View the code <b>[Bash Script Code](BashScript/InfoHub/InfoHubEnglish.sh)</b>.
+<hr>
+
 ## License
 
 MIT
