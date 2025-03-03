@@ -66,8 +66,7 @@ This script provides an interactive menu to display system information. The user
 View the code <b>[Bash Script Code](BashScript/InfoHub/InfoHubEnglish.sh)</b>.
 <hr>
 
-## 10. Server-Health
-
+## 10. Server-HealthThe script displays system information including date, uptime, connected users, disk and memory usage, OOM errors, resource-intensive processes, open TCP ports, and current connections. It also shows process status and vmstat.
 
 View the code <b>[Bash Script Code](BashScript/Server-Health/Server-Health.sh)</b>.
 <hr>
