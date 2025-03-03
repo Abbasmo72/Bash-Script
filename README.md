@@ -66,6 +66,12 @@ This script provides an interactive menu to display system information. The user
 View the code <b>[Bash Script Code](BashScript/InfoHub/InfoHubEnglish.sh)</b>.
 <hr>
 
+## 10. Server-Health
+
+
+View the code <b>[Bash Script Code](BashScript/Server-Health/Server-Health.sh)</b>.
+<hr>
+
 ## License
 
 MIT
