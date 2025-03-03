@@ -73,7 +73,11 @@
 مشاهده کد <b>[Bash Script Code](BashScript/InfoHub/InfoHubPersian.sh)</b>.
 <hr>
 
+## 10. وضعیت سرور
+اسکریپت اطلاعاتی از سیستم شامل تاریخ، وضعیت uptime، کاربران متصل، مصرف دیسک و حافظه، خطاهای OOM، پروسه‌های پرمصرف، پورت‌های باز TCP و اتصالات جاری را نمایش می‌دهد. همچنین وضعیت پردازش‌ها و vmstat را نشان می‌دهد.
 
+مشاهده کد <b>[Bash Script Code](BashScript/Server-Health/Server-Health.sh)</b>.
+<hr>
 
 ## مجوز
 
