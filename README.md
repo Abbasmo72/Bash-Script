@@ -72,6 +72,12 @@ The script displays system information including date, uptime, connected users, 
 View the code <b>[Bash Script Code](BashScript/Server-Health/Server-Health.sh)</b>.
 <hr>
 
+## 11. Hardware Monitor
+This script displays system information, including processor model, kernel version, installed software, OS version, memory details, serial number, and IP address. It also allows installing specific programs on Ubuntu-based systems.
+
+View the code <b>[Bash Script Code](BashScript/HardwareMonitor/HardwareMonitor.sh)</b>.
+<hr>
+
 ## License
 
 MIT
