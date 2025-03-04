@@ -84,6 +84,7 @@
 
 مشاهده کد <b>[Bash Script Code](BashScript/HardwareMonitor/HardwareMonitor.sh)</b>.
 <hr>
+
 ## مجوز
 
 MIT
